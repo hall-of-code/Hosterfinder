@@ -1,0 +1,118 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --hf-dark-s: #383B5E;
+  --hf-dark-m: #313455;
+  --hf-dark-l: #2B2F4C;
+
+  --hf-lila-s: #7661C0;
+  --hf-lila-op: #7661c082;
+
+  --hf-grey-light: #B2B6D4;
+  --hf-red-pink: #fe225b;
+
+  --bs-body-font-family: 'Roboto', sans-serif;
+}
+
+.hf-bg-dark-s
+{
+  background: var(--hf-dark-s);
+}
+
+.hf-txt-lila
+{
+  color: var(--hf-lila-s);
+}
+
+.hf-bg-dark-m
+{
+  background: var(--hf-dark-m);
+}
+
+.hf-bg-dark-l
+{
+  background: var(--hf-dark-l);
+}
+
+.hf-txt-light
+{
+  color: var(--hf-grey-light);
+}
+
+.hf-txt-redpink
+{
+  color: var(--hf-red-pink);
+}
+
+.transition
+{
+  transition: all .2s ease-in-out;
+}
+
+body, header 
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined 
+{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 200,
+  'opsz' 40
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+  transition: all 1s ease-in-out;
+}
+
+.pulse:hover {
+  transition: all .9s ease-in-out;
+  transform: scale(1.6) !important;
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1.14);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.14);
+  }
+}
+
+.anima-trans, .anima-trans:hover
+{
+  transition: all .25s ease-in-out;
+}
